@@ -10,6 +10,7 @@
         color: white;
         font-size: 15px;
         font-family: sans-serif;
+        overflow-x: hidden;
     }
 
    .sec1{
@@ -51,7 +52,7 @@
         background: transparent;
         border: 1px solid var(--secondary--);
         border-radius: 8px;
-        width: 89px;
+        width: 95px;
         height: 50px;
         color: white;
         cursor: pointer;
@@ -200,6 +201,7 @@
         color: white;
         font-size: 15px;
         font-family: sans-serif;
+        overflow-x: hidden;
     }
 
    .sec1{
