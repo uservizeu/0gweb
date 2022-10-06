@@ -93,8 +93,8 @@
     }
 
     .img3{
-        width: 350px;
-        height: 200px;
+        width: 315px;
+        height: 144px;
     }
     .art3{
 
@@ -151,6 +151,7 @@
     .sup{
         background-color: var(--prymary--);
         border: 1px solid var(--primary--);
+        color: var(--primary--);
         border-radius: 8px;
         cursor: pointer;
         width: 80px;
