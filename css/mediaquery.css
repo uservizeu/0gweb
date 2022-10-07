@@ -593,4 +593,39 @@
         box-shadow: 0 5px 20px var(--primary--);
     }
 
+    .circle{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        border: 1px solid #278CC6;
+        animation: wave 0.8s forwards;
+        opacity: 1;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0, 0.2s), 0 6px 20px #030F21;
+    }
+
+    @keyframes wave {
+        0% {
+            width: 5px;
+            height: 5px;
+            opacity: 1;
+        }
+
+        90% {
+             width: 50px;
+            height: 50px;
+            opacity: 0.5;
+        }
+
+        100% {
+            width: 50px;
+            height: 50px;
+            opacity: 0;
+        }
+
+
+    }
+
 }
