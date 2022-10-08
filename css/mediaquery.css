@@ -397,6 +397,16 @@
         font-family: sans-serif;
         overflow-x: hidden;
     }
+    
+    body,
+    html{
+        margin:0px;
+        padding: 0px;
+        position: fixed;
+        background: rgb(30,30,30);
+        cursor: none;
+    
+    }
 
    .sec1{
         width: 100%;
