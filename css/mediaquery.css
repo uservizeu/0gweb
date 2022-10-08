@@ -397,14 +397,6 @@
         font-family: sans-serif;
         overflow-x: hidden;
     }
-    
-    html{
-        margin:0px;
-        padding: 0px;
-        position: fixed;
-        cursor: none;
-    
-    }
 
    .sec1{
         width: 100%;
