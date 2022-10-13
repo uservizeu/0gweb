@@ -9,7 +9,9 @@
     <title>0g Automação - Excelência em automação comercial</title>
 </head>
 <body>
-   
+<div class="loader-container">
+    <div class="loader"></div>
+</div>
     <section class="sec1">
         <header>
             <h1 class="logo">0g Automação</h1>
@@ -95,19 +97,12 @@
      window.location.href="https://wa.me/+5554996270428"
     }
 
-    document.body.addEventListener('click', (e) => {
-        const element = document.createElement('span')
-        element.className = 'circle'
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        document.querySelector('.loader-container').style.display  = 'none';
+    }, 1000)
+    });
 
-        element.style.left = e.clientX - 10 + 'px'
-        element.style.top = e.clientY - 10 + 'px'
-
-        document.body.append(element)
-
-        setTimeout(() => {
-            element.remove()
-        }, 900)
-    })
     </script>
 </body>
 </html>
