@@ -1,108 +1,592 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/img/logo.png">
-    <link rel="stylesheet" href="css/mediaquery.css" type="text/css">
-    <title>0g Automação - Excelência em automação comercial</title>
-</head>
-<body>
-<div class="loader-container">
-    <span class="loader"></span>
-</div>
-    <section class="sec1">
-        <header>
-            <h1 class="logo">0g Automação</h1>
-            <button class="headbtn" onclick="contWpp()">Contate-nos</button>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0g Automação</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="icon" href="./img/0G.png" type="favicon"/>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        <div class="overlay overlay-lg">
+          <img src="./img/shapes/square.png" class="shape square" alt="" />
+          <img src="./img/shapes/circle.png" class="shape circle" alt="" />
+          <img
+            src="./img/shapes/half-circle.png"
+            class="shape half-circle1"
+            alt=""
+          />
+          <img
+            src="./img/shapes/half-circle.png"
+            class="shape half-circle2"
+            alt=""
+          />
+          <img src="./img/shapes/x.png" class="shape xshape" alt="" />
+          <img src="./img/shapes/wave.png" class="shape wave wave1" alt="" />
+          <img src="./img/shapes/wave.png" class="shape wave wave2" alt="" />
+          <img src="./img/shapes/triangle.png" class="shape triangle" alt="" />
+          <img src="./img/shapes/letters.png" class="letters" alt="" />
+          <img src="./img/shapes/points1.png" class="points points1" alt="" />
+        </div>
 
-        <article class="art1">
-            
-            <h2>Excelência em automação comercial</h2>
-            <p>Empresa especializada em sistemas, balanças e etiquetas para comércio.</p>
-      <img src="img/img1.png"  class="img1">
-        </article>
-    </section>
-
-    <section class="sec2">
-        <article class="art1">
-            <h2>Suporte ao cliente 7 dias por semana</h2>
-            <p>Equipe especializada pronta para atende-los nas mais diversas áreas</p>
-        <img src="img/img2.png" class="img2">            
-        </article>
-    </section>
-
-    <section class="sec3">
-
-        <article class="art3">
-        <h2>Clientes por toda região sul</h2>
-            <div class="cli">
-                <h2 class="skill">+200 clientes</h2>
-            <p>em toda região sul</p>
-            </div>   
-            
-            <div class="sis">
-                <h2 class="skill">+10 sistemas</h2>
-                <p>para diversas aplicações</p>
-                </div>   
-
-                <div class="acp">
-                    <h2 class="skill">+90% de aceitação</h2>
-                    <p>clientes satisfeitos</p>
-                    </div>   
-
-                </article>
-    </section>
-
-    <section class="sec4">
-        <article class="art4">
-            <h2>Experiência do Cliente</h2>
-
-            <img src="img/img3.png" class="img3">
-        </article>
-    </section>
-
-    <section class="sec5">
-        <article class="art5">
-            <h2>Seja você também parte desta família !</h2>
-            <p>Entre em contato abaixo</p>
-        <main>
-            <button class="com" onclick="contCom()">Comercial</button>
-            <button class="sup" onclick="contSup()">Suporte</button>
-        </main>            
-        </article>
-
-        <footer>
-
-            <div class="copy">
-                <a href="#">© 2022 - Todos os direitos reservados.</a>
+        <nav>
+          <div class="container">
+            <div class="logo">
+              <p>0g Automação</p>
             </div>
 
-        </footer>
-    </section>
+            <div class="links">
+              <ul>
+                <li>
+                  <a href="#header">Início</a>
+                </li>
+                <li>
+                  <a href="#services">Sistemas</a>
+                </li>
+                <li>
+                  <a href="#portfolio">Balanças</a>
+                </li>
+                <li>
+                  <a href="#testimonials">Clientes</a>
+                </li>
 
-    <script>
-               
-            function contWpp () {
-     window.location.href="https://wa.me/+5554999426004"
-    }
+                <li>
+                  <a href="#hireme" class="active">Contato</a>
+                </li>
+              </ul>
+            </div>
 
-    function contCom () {
-     window.location.href="https://wa.me/+5554981355253"
-    }
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </nav>
 
-    function contSup () {
-     window.location.href="https://wa.me/+5554996270428"
-    }
+        <div class="header-content">
+          <div class="container grid-2">
+            <div class="column-1">
+              <h1 class="header-title">0g Automação</h1>
+              <p class="text">
+               Seja bem vindo ao portal da 0g ! aqui você encontra oque há de mais tecnológico em sistemas de gestão e pesagem.
+              </p>
+              <a href="https://wa.me/+5554981355253" class="btn">Contate Já</a>
+            </div>
 
-window.addEventListener('load', () => {
-    setTimeout(() => {
-        document.querySelector('.loader-container').style.display  = 'none';
-    }, 3000)
-    });
+            <div class="column-2 image">
+              <img
+                src="./img/shapes/points2.png"
+                class="points points2"
+                alt=""
+              />
+              <img src="./img/about.png" class="img-element z-index" alt="" />
+            </div>
+          </div>
+        </div>
+      </header>
 
-    </script>
-</body>
+      <section class="services section" id="services">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Nossos sistemas">Sistemas</h3>
+            <p class="text">
+              Sistemas de gestão para todo tipo de comércio.
+            </p>
+          </div>
+
+          <div class="cards">
+            <div class="card-wrap">
+              <img
+                src="./img/shapes/points3.png"
+                class="points points1 points-sq"
+                alt=""
+              />
+              <div class="card" data-card="UI/UX">
+                <div class="card-content z-index">
+                  <img src="./img/iconERP.png" class="icon" alt="" />
+                  <h3 class="title-sm">Sistema ERP</h3>
+                  <p class="text">
+                    O sistema ideal para seu comércio, com gestão de estoque, clientes e funcionários, além de contas a receber, comissões e um controle fiscal completo.
+                  </p>
+                  <a href="https://wa.me/+5554996270428" class="btn small">Contratar Já</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrap">
+              <div class="card" data-card="Code">
+                <div class="card-content z-index">
+                  <img src="./img/iconRE.png" class="icon" alt="" />
+                  <h3 class="title-sm">Sistema Restaurante</h3>
+                  <p class="text">
+                   Sistema ideal para geração de  comandas, mesas e cartões para restaurante, atendimento rápido com integração mobile e integração com Ifood.
+                  </p>
+                  <a href="https://wa.me/+5554996270428" class="btn small">Contratar Já</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrap">
+              <img
+                src="./img/shapes/points3.png"
+                class="points points2 points-sq"
+                alt=""
+              />
+              <div class="card" data-card="App">
+                <div class="card-content z-index">
+                  <img src="./img/iconLoja.png" class="icon" alt="" />
+                  <h3 class="title-sm">Sistema Loja</h3>
+                  <p class="text">
+                    Sistema em Núvem ideal para lojas modernas, com uma interface muito ituitiva e sofisticada.
+                  </p>
+                  <a href="https://wa.me/+5554996270428" class="btn small">Contratar Já</a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio section" id="portfolio">
+        <div class="background-bg">
+          <div class="overlay overlay-sm">
+            <img
+              src="./img/shapes/half-circle.png"
+              class="shape half-circle1"
+              alt=""
+            />
+            <img
+              src="./img/shapes/half-circle.png"
+              class="shape half-circle2"
+              alt=""
+            />
+            <img src="./img/shapes/square.png" class="shape square" alt="" />
+            <img src="./img/shapes/wave.png" class="shape wave" alt="" />
+            <img src="./img/shapes/circle.png" class="shape circle" alt="" />
+            <img
+              src="./img/shapes/triangle.png"
+              class="shape triangle"
+              alt=""
+            />
+            <img src="./img/shapes/x.png" class="shape xshape" alt="" />
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Pesagem">Balanças</h3>
+          </div>
+
+          <div class="section-body">
+            <div class="filter">
+              <button class="filter-btn active" data-filter="*">Todas</button>
+
+
+            </div>
+
+            <div class="grid">
+              <div class="grid-item logo-design">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/port1.jpg" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Toledo</h3>
+                      <h5>Balanças Toledo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item webdev">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/port2.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Balmak</h3>
+                      <h5>Balanças Balmak</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item ui webdev">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/port3.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>UPX</h3>
+                      <h5>Balanças UPX</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="more-folio">
+              <a href="https://wa.me/+5554981355253" class="btn">Comprar Agora</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Detalhes">Mais detalhes</h3>
+          </div>
+
+          <div class="section-body grid-2">
+            <div class="column-1">
+              <h3 class="title-sm">Nossos Clientes</h3>
+              <p class="text">
+               Veja como é organizada nossa estrutura entre clientes das mais diversas áreas e junte-se a nós !
+              </p>
+              <div class="skills">
+                <div class="skill html">
+                  <h3 class="skill-title">Sistemas</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="90%"></div>
+                  </div>
+                </div>
+                <div class="skill css">
+                  <h3 class="skill-title">Balanças</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="70%"></div>
+                  </div>
+                </div>
+                <div class="skill js">
+                  <h3 class="skill-title">Etiquetas</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="80%"></div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="column-2 image">
+              <img src="./img/shapes/points4.png" class="points" alt="" />
+              <img src="./img/esta.png" class="z-index" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="records">
+        <div class="overlay overlay-sm">
+          <img src="./img/shapes/square.png" alt="" class="shape square1" />
+          <img src="./img/shapes/square.png" alt="" class="shape square2" />
+          <img src="./img/shapes/circle.png" alt="" class="shape circle" />
+          <img
+            src="./img/shapes/half-circle.png"
+            alt=""
+            class="shape half-circle"
+          />
+          <img src="./img/shapes/wave.png" alt="" class="shape wave wave1" />
+          <img src="./img/shapes/wave.png" alt="" class="shape wave wave2" />
+          <img src="./img/shapes/x.png" alt="" class="shape xshape" />
+          <img src="./img/shapes/triangle.png" alt="" class="shape triangle" />
+        </div>
+
+        <div class="container">
+          <div class="wrap">
+            <div class="record-circle">
+              <h2 class="number" data-num="200">0</h2>
+              <h4 class="sub-title">Clientes</h4>
+            </div>
+          </div>
+
+          <div class="wrap">
+            <div class="record-circle active">
+              <h2 class="number" data-num="10">0</h2>
+              <h4 class="sub-title">Sistemas</h4>
+            </div>
+          </div>
+
+          <div class="wrap">
+            <div class="record-circle">
+              <h2 class="number" data-num="7">0</h2>
+              <h4 class="sub-title">Dias por semana</h4>
+            </div>
+          </div>
+
+          <div class="wrap">
+            <div class="record-circle">
+              <h2 class="number" data-num="90">0</h2>
+              <h4 class="sub-title">Aceitação</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog section">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Last News">Saudação</h3>
+            <p class="text">
+            Veja oque nossos técnicos tem a dizer.
+            </p>
+          </div>
+
+          <div class="blog-wrapper">
+            <div class="blog-wrap">
+              <img
+                src="./img/shapes/points3.png"
+                alt=""
+                class="points points-sq"
+              />
+
+              <div class="blog-card">
+                <div class="blog-image">
+                  <img src="./img/blog1.png" alt="" />
+                </div>
+
+                <div class="blog-content">
+                  <div class="blog-info">
+                    <h5 class="blog-date">Outubro - 2022</h5>
+                    <h5 class="blog-user"><i class="fas fa-user"></i>Téc.</h5>
+                  </div>
+                  <h3 class="title-sm">Lucas Vizeu</h3>
+                  <p class="blog-text">
+                    Olá ! Nossa equipe está inteiramente disposta a te auxiliar no que precisar.
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-wrap">
+              <div class="blog-card">
+                <div class="blog-image">
+                  <img src="./img/blog1.png" alt="" />
+                </div>
+
+                <div class="blog-content">
+                  <div class="blog-info">
+                    <h5 class="blog-date">Agosto - 2022</h5>
+                    <h5 class="blog-user"><i class="fas fa-user"></i>Téc.</h5>
+                  </div>
+                  <h3 class="title-sm">Alex Nazari</h3>
+                  <p class="blog-text">
+                   Esperamos você para fazer parte dessa familia.
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-wrap">
+              <div class="blog-card">
+                <div class="blog-image">
+                  <img src="./img/blog2.png" alt="" />
+                </div>
+
+                <div class="blog-content">
+                  <div class="blog-info">
+                    <h5 class="blog-date">Dezembro - 2021</h5>
+                    <h5 class="blog-user"><i class="fas fa-user"></i>Secretária</h5>
+                  </div>
+                  <h3 class="title-sm">Paula Cambrussi</h3>
+                  <p class="blog-text">
+                   Fazemos o nosso melhor para você e pensando em você.
+                  </p>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials section" id="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="What People Say">Satisfação</h3>
+          </div>
+
+          <div class="testi-content grid-2">
+            <div class="column-1 reviews">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <p class="review-text">
+                      atendimento rápido e o sistema é excelente também.
+                    </p>
+
+                    <div class="review-info">
+                      <h3 class="review-name">Grenal Supermercado</h3>
+                      <h5 class="review-job">Passo Fundo - RS</h5>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <p class="review-text">
+                      Balanças de ótima qualidade, e o suporte não é diferente.
+                    </p>
+
+                    <div class="review-info">
+                      <h3 class="review-name">Karpinsky Supermercado</h3>
+                      <h5 class="review-job">Passo Fundo - RS</h5>
+                    </div>
+                  </div>
+
+
+
+
+                </div>
+
+                <div class="review-nav swiper-button-prev">
+                  <i class="fas fa-long-arrow-alt-left"></i>
+                </div>
+                <div class="review-nav swiper-button-next">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="column-2 image">
+              <img src="./img/testi.png" alt="" class="img-element" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="hireme" id="hireme">
+        <div class="container">
+          <h3 class="title">venha para parte da família que é referência no RS</h3>
+          <p class="text">
+           Estamos te esperando para uma visita, entre em contato conosco.
+          </p>
+          <a href="https://wa.me/+5554981355253" class="btn">Contato</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="grid-4">
+          <div class="grid-4-col footer-about">
+            <h3 class="title-sm">Localização</h3>
+            <p class="text">
+             Rua Nilo Peçanha 294, Petrópolis. Passo Fundo - RS
+            </p>
+          </div>
+
+          <div class="grid-4-col footer-links">
+            <h3 class="title-sm">Suporte</h3>
+            <ul>
+              <li>
+                <a href="https://wa.me/+5554996270428">Lucas Vizeu</a>
+              </li>
+              <li>
+                <a href="https://wa.me/+5554981595151">Alex Nazari</a>
+              </li>
+              <li>
+                <a href="https://wa.me/+5554999317621">Miguel Filho</a>
+              </li>
+           
+            </ul>
+          </div>
+
+          <div class="grid-4-col footer-links">
+            <h3 class="title-sm">Comercial</h3>
+            <ul>
+              <li>
+                <a href="https://wa.me/+5554999426004">Secretaria</a>
+              </li>
+              <li>
+                <a href="https://wa.me/+5554981355253">Alcione Cordeiro</a>
+              </li>
+           
+            </ul>
+          </div>
+
+          <div class="grid-4-col footer-newstletter">
+            <h3 class="title-sm">Deixe seu E-mail</h3>
+            <p class="text">
+              Nos forneça seu número para contato
+            </p>
+            <div class="footer-input-wrap">
+              <a href="mailto:0gautomacao@gmail.com" class="footer-input"></a>
+              <a href="" class="input-arrow">
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-footer">
+          <div class="copyright">
+            <p class="text">
+              Copyright&copy;2022 Todos os direitos reservados | Emanutec
+              <span>0g</span>
+            </p>
+          </div>
+
+          <div class="followme-wrap">
+            <div class="followme">
+              <h3>Siga-nos</h3>
+              <span class="footer-line"></span>
+              <div class="social-media">
+                <a href="https://www.facebook.com/search/top?q=0g%20automa%C3%A7%C3%A3o">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                 
+                </a>
+                <a href="https://www.instagram.com/0g._.automacao/">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                  
+                </a>
+              </div>
+            </div>
+
+            <div class="back-btn-wrap">
+              <a href="#" class="back-btn">
+                <i class="fas fa-chevron-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
 </html>
